@@ -1,0 +1,12 @@
+.animated-image {
+    animation: slideAnimation 10s infinite linear;
+  }
+
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

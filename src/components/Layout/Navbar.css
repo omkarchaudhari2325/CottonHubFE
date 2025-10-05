@@ -1,0 +1,22 @@
+.heading::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(29, 178, 228);
+    border-radius: 1px;
+    transition: width 0.2s ease;
+
+    /* Adjust the transition duration as needed */
+}
+
+.heading:hover::before {
+    width: 100%;
+    /* colo r: rgb(29, 178, 228) ; */
+}
+
+.heading:hover{
+    color: rgb(2, 76, 159) ;
+}

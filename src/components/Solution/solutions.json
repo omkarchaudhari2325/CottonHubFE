@@ -1,0 +1,214 @@
+[
+  {
+    "id": 1,
+    "name": "aphids",
+    "img": "/src/static_images/Aphids/2.jpg",
+    "description": "The cotton aphid (Aphis gossypii) is mostly found in the younger parts of plants; often on the underside of leaves and shoots. The cotton aphid can be winged or wingless. The wingless aphid has a stocky, round body shape of 0.9-2.8 mm in size. This size depends on temperature, food availability and population density. Its color varies from pale yellow to black-green. It also has red eyes and black siphuncles on its lower body (this is the most important distinguishing feature for identifying this aphid).The winged cotton aphid is on average slightly larger, has a black head and body and a yellow/dark green abdomen. The winged cotton aphid siphuncles are also black and short. For prompt detection of aphids, signaling rolls can be used. It is difficult to determine on sticky traps what aphid is involved but they do indicate the cotton aphid infestation. In doubt about the type of aphid? Then read our article on aphid control.",
+    "damage-symptons": "The cotton aphid (Aphis gossypii) is an important vector for viral diseases. This aphid species can transmit more than 50 different viruses, including the cucumber mosaic virus.Nymphs and adults extract nutrients from the plant and disturb the balance of growth hormones. As a result, the plant’s growth is retarded giving rise to deformed leaves or, if the infestation occurs early enough in the season, the death of young plants. Retarded growth and defoliation reduce yield.Plant sap is rich in sugars, but has a low protein content. Aphids therefore need to extract large quantities of sap to get sufficient protein. The excess sugar is secreted in the form of honeydew, making the crop and its fruit sticky. Black fungal moulds (Cladosporium spp.) grow on this honeydew, contaminating fruit and ornamental crops and rendering them unsuitable for market. At the same time, photosynthesis in the leaves is reduced, affecting production.",
+    "mechanical-control": "A good effective method for eliminating aphids is to simply rinse them off the leaves of affected plants. A water hose and nozzle with adequate pressure is enough to knock the aphids from the foliage, but not to damage the plant. CAUTION: A powered pressure washer is much too strong. The jet or shower setting on a dial nozzle is enough to dislodge these pests. Once off the plant, aphids cannot climb back up the plant and will often starve to death. Aphids can also be rubbed off the plants with fingers or a wet cloth. This method effective against small aphid populations and at the very early stages of infestation. Physical removal by rubbing would be ineffective at removing large infestations.",
+    "biological-control": "<p>Aphids have several natural enemies that can be attracted or released to help keep populations in check. The most common one that gardeners are familiar with are lady beetles. Lady beetles and their larvae feed on many different types of aphids, and their presence in the garden should be encouraged by reducing the overall use of broad-spectrum insecticides.</p><ul><li>Lady beetles are available for purchase, but it is not recommended to buy them. They are typically harvested during their hibernation period in the western U.S., and as a result are often confused when they arrive in a gardener’s home. As a result, the lady beetles fly away in search of a new hibernation spot. For home gardeners, it is best use plants in the garden and landscape that will attract lady beetles, such as sunflowers, clovers, liatris, and coreopsis.</li><li>Another effective natural enemy that can be purchased and released is green lacewing larvae (Chrysoperia rufilabris). These larvae are extremely aggressive and will eat numerous aphids a day. Lacewing eggs are laid on a tomato and will help control aphid populations once they hatch. They can be released on specific plants that are infested for direct application or released as adults to establish in the garden. These insects can be attracted by adding plant species such as coreopsis, cosmos, and clover in the garden and landscape. Another way to encourage and protect them is to reduce the use of broad-spectrum insecticides. Lacewings are extremely sensitive to insecticides and even drift from an application can be harmful. Many lacewing adults are often killed in bug zappers used for mosquito control. These helpful predators can be purchased from online sources. It is recommended that only lacewing larvae are purchased and released into the garden and landscape.</li><li>Another natural enemy are parasitic wasps (Aphidius species) that sting aphids and impregnate them with an egg. The egg then grows inside the aphid, killing and mummifying it, and a new adult wasp hatches out of the mummified aphid.</li></ul>",
+    "chemical-control": "When all other control measures have failed to keep the populations under control, a chemical insecticide may be needed. The goal with insecticide use is to choose the one with minimal impact to pollinators and natural enemies, but one that is still effective on the insect causing the problem. It should be noted that although the aphids are killed by insecticides, their dead carcasses can still be on the leaves after the application. Do not panic and make an additional application. Check to see if the aphids are still alive by nudging them with a pencil. Additional applications are only needed if live aphids are still present. The dead aphids can be removed by washing the leaves off with water. Before purchasing and using an insecticide, be sure to read and follow ALL label directions. The label is the law; therefore, the product label is the final authority on what crop or areas the product can be applied and at what rate. When shopping for an insecticide, be sure to look on the package for the active ingredient and choose the product with the proper active ingredient to control the pest. Always spray late in the day for best results and to protect beneficial insects.The first effective choice to spray would be either insecticidal soap or horticultural oil. These insecticidal products coat the aphid’s exoskeleton (body)and cause it to suffocate. These insecticides also can kill beneficial insects upon contact, but they have no residual activity. So only beneficial insects and pollinators that were directly hit by the application will be affected. Pollinators and natural enemies that arrive after the spray solution has dried, will not be impacted by these soaps or oils. Note that these products may be phytotoxic (damaging to the plant) to drought stressed plants, especially at temperatures 90°F or higher. Applications should be made when temperatures are cooler, such as the mid- to late evening to avoid any potential plant damage.",
+    "products": [
+      {
+        "name": "Neem Oil",
+        "description": "Dilute neem oil according to the instructions on the product label. Typically, you'll mix a certain amount of neem oil with water.Transfer the diluted neem oil solution into a garden sprayer.Spray the neem oil solution onto the affected parts of the cotton plants, making sure to cover both the upper and lower surfaces of the leaves where aphids are present.Repeat the application every 7 to 14 days or as recommended on the product label until the aphid infestation is under control.",
+        "img": ""
+      },
+      {
+        "name": "Insecticidal Soap",
+        "description": "Shake the insecticidal soap product well before use.Dilute the insecticidal soap according to the instructions on the product label.Transfer the diluted solution into a spray bottle or garden sprayer.Thoroughly spray the insecticidal soap onto the affected parts of the cotton plants, ensuring complete coverage of aphids. Avoid spraying during hot, sunny periods to prevent plant damage.Repeat applications every 5 to 7 days or as needed until aphids are no longer present.",
+        "img": ""
+      },
+      {
+        "name": "Pyrethrin Spray",
+        "description": "Shake the pyrethrin spray product well before use.Transfer the pyrethrin spray into a garden sprayer.Apply the pyrethrin spray to the cotton plants, targeting areas where aphids are concentrated.Avoid spraying during windy conditions to prevent drift.Reapply the pyrethrin spray as necessary, following the instructions on the product label..",
+        "img": ""
+      },
+      {
+        "name": "Diatomaceous Earth",
+        "description": "Sprinkle a thin layer of diatomaceous earth around the base of the cotton plants and on the foliage where aphids are present.Reapply diatomaceous earth after rainfall or irrigation, as it becomes ineffective when wet.Take care not to inhale diatomaceous earth dust during application.Monitor the cotton plants regularly and reapply diatomaceous earth as needed until aphids are controlled.",
+        "img": ""
+      }
+    ],
+    "additional-details": "In addition to using these products, it's essential to practice good cultural and preventive measures to take care of aphid infestations: Monitor plants regularly for signs of aphids, such as curled leaves, sticky honeydew residue, or the presence of ants. Remove and destroy heavily infested plant parts to prevent the spread of aphids.Encourage natural predators of aphids, such as ladybugs, lacewings, and parasitic wasps, by planting diverse vegetation and avoiding the use of broad-spectrum insecticides.Maintain healthy growing conditions for cotton plants, including proper watering, fertilization, and adequate spacing to minimize stress and susceptibility to pests.By combining these control measures with the appropriate use of insecticidal products, you can effectively manage aphid infestations and maintain the health of your cotton plants."
+  },
+  {
+    "id": 2,
+    "name": "army worm",
+    "img": "/src/static_images/Armyworm/1.jpg",
+    "description": "Armyworms (Spodoptera spp.) are destructive pests that target a wide variety of crops including corn, rice, sorghum, and sugarcane. The larvae are caterpillars that can cause significant damage to leaves, stems, and fruit. Armyworms can be identified by their dark green to brown color, with stripes running down their bodies. They are most active during the night and can quickly defoliate plants if not controlled.",
+    "damage-symptoms": "Armyworm infestations can lead to extensive damage to crops. Symptoms include chewed leaves with ragged edges, stems with boreholes, and defoliation. Armyworms also cause direct damage to fruits and grain heads, reducing crop yield. Severe infestations can result in the total destruction of a field. The larvae are often found hiding in plant debris or soil during the day and emerge at night to feed.",
+    "mechanical-control": "Manual removal of armyworms can be effective for small infestations. Inspect plants regularly and remove any larvae by hand, disposing of them in a bucket of soapy water. Additionally, using barriers such as row covers can prevent adult moths from laying eggs on crops. Tilling the soil can also expose and kill overwintering larvae and pupae.",
+    "biological-control": "<p>Natural predators and parasitoids play a crucial role in managing armyworm populations. Encouraging these beneficial insects can help keep armyworm numbers in check. Predators include birds, spiders, and beetles, while parasitoids include various wasp species that lay eggs in or on armyworms.</p><ul><li>Parasitoid wasps (Trichogramma spp.) can be released to target armyworm eggs, preventing them from hatching. These wasps are effective in reducing the armyworm population at the early stages of infestation.</li><li>Entomopathogenic nematodes (Steinernema spp. and Heterorhabditis spp.) can be applied to the soil to infect and kill armyworm larvae. These nematodes are a safe and environmentally friendly option for controlling armyworms.</li><li>Bacillus thuringiensis (Bt) is a microbial insecticide that targets caterpillars. Bt can be sprayed on plants to control armyworm larvae. It is safe for humans, pets, and beneficial insects.</li></ul>",
+    "chemical-control": "Chemical control should be used as a last resort when other methods have failed to manage the infestation. Selective insecticides that target caterpillars can be effective without harming beneficial insects. It's important to follow label instructions and apply insecticides during times when armyworms are active, usually in the late afternoon or evening. Rotate insecticides with different modes of action to prevent resistance.",
+    "products": [
+      {
+        "name": "Spinosad",
+        "description": "Spinosad is a natural insecticide derived from soil bacteria. It is effective against caterpillars, including armyworms. Apply Spinosad to the affected plants, covering both upper and lower leaf surfaces. Repeat applications every 7-10 days as needed.",
+        "img": ""
+      },
+      {
+        "name": "Bacillus thuringiensis (Bt)",
+        "description": "Bt is a microbial insecticide that specifically targets caterpillars. Mix Bt according to label instructions and spray it onto the infested plants. Ensure thorough coverage of the foliage. Reapply as necessary, especially after rainfall.",
+        "img": ""
+      },
+      {
+        "name": "Insecticidal Soap",
+        "description": "Insecticidal soap can be used to manage armyworms by disrupting their cell membranes. Mix the soap according to label instructions and spray it directly onto the larvae. Repeat applications as needed, avoiding application during the hottest part of the day.",
+        "img": ""
+      },
+      {
+        "name": "Neem Oil",
+        "description": "Neem oil can be used to disrupt the growth and feeding of armyworms. Dilute the neem oil as directed and apply it to the affected plants, covering all parts thoroughly. Repeat every 7-14 days or as necessary.",
+        "img": ""
+      }
+    ],
+    "additional-details": "In addition to using these products, practicing good cultural and preventive measures is essential for managing armyworm infestations: Monitor crops regularly for early signs of armyworm activity. Remove plant debris and weeds that can harbor armyworm larvae. Encourage natural predators and beneficial insects by planting a diverse range of crops and flowers. Implement crop rotation to break the life cycle of armyworms. Use pheromone traps to monitor and reduce adult moth populations. By combining these strategies with the appropriate use of insecticidal products, you can effectively manage armyworm infestations and protect your crops."
+  },
+  {
+    "id": 3,
+    "name": "bacterial blight",
+    "img": "/src/static_images/BacterialBlight/1.jpeg",
+    "description": "Bacterial blight, caused by the bacterium Xanthomonas citri subsp. malvacearum, is a devastating disease that significantly affects cotton crops worldwide. This bacterium thrives in warm, humid climates and can spread rapidly through rain splashes, irrigation water, wind, insects, and contaminated equipment. Bacterial blight is known to cause severe yield losses and degrade the quality of cotton fibers, making it a major concern for cotton producers.",
+    "damage-symptoms": "The symptoms of bacterial blight vary depending on the plant part affected:\n- Leaves: Initial symptoms appear as small, water-soaked spots that expand and turn brown, often with a yellow halo. These lesions can merge to form large, irregularly shaped dead areas, causing premature leaf drop and defoliation.\n- Bolls: Bacterial blight manifests as small, dark, water-soaked spots on bolls, which enlarge and turn black. Infected bolls may rot, leading to a reduction in cotton fiber quality and quantity.\n- Stems and Petioles: Dark, elongated streaks appear on stems and petioles. These streaks can girdle the stem, causing wilting and death of the affected parts, significantly impacting plant growth and development.",
+    "mechanical-control": "Mechanical control methods are essential in managing bacterial blight:\n- Pruning: Regularly prune and destroy infected plant parts to limit the spread of the bacterium. Ensure that pruning tools are disinfected between cuts to prevent cross-contamination.\n- Sanitation: Maintain clean cultivation practices by disinfecting tools and equipment regularly. Avoid working in wet fields to reduce the spread of bacteria through splashing water.\n- Crop Rotation: Implement crop rotation practices by planting non-host crops in affected fields for at least two years to reduce bacterial populations in the soil.",
+    "biological-control": "<p>Biological control methods involve using natural antagonists and enhancing plant health to combat bacterial blight:</p><ul><li>Resistant Varieties: Planting cotton varieties that are genetically resistant to bacterial blight is one of the most effective ways to manage the disease. These varieties have been bred to withstand infection and limit disease spread.</li><li>Soil Health: Improve soil health through the application of organic matter, compost, and beneficial microbes. Healthy soil supports robust plant growth and resilience against diseases.</li><li>Biocontrol Agents: Research is ongoing to identify biocontrol agents that can effectively suppress bacterial blight. Currently, the use of such agents is limited, but promoting a diverse microbial ecosystem in the soil can be beneficial.</li></ul>",
+    "chemical-control": "Chemical control should be used as part of an integrated disease management strategy:\n- Copper-based Bactericides: Copper-based products are commonly used to manage bacterial blight. These bactericides reduce bacterial populations on plant surfaces. Apply according to label instructions, ensuring thorough coverage, especially after rain.\n- Streptomycin: This antibiotic can be used to control bacterial blight, although its use is restricted in some regions due to regulatory concerns and potential resistance development. Follow label directions carefully and use as part of an integrated approach.\n- Integrated Pest Management (IPM): Incorporate chemical controls with other management practices to minimize the risk of resistance and protect beneficial organisms.",
+    "products": [
+      {
+        "name": "Copper-based Bactericides",
+        "description": "Copper-based bactericides are effective in reducing bacterial populations on plant surfaces. Apply according to label instructions, ensuring thorough coverage of foliage and stems. Reapply after rainfall or as necessary to maintain protection.",
+        "img": ""
+      },
+      {
+        "name": "Streptomycin",
+        "description": "Streptomycin is an antibiotic used to control bacterial blight in cotton. Follow label directions carefully, noting any restrictions or resistance management guidelines. Use as part of an integrated pest management strategy to reduce the risk of resistance.",
+        "img": ""
+      }
+    ],
+    "additional-details": "Effective management of bacterial blight involves integrating multiple control measures:\n- Regular Monitoring: Frequently inspect cotton plants for early signs of bacterial blight. Early detection allows for timely intervention and reduces the spread of the disease.\n- Proper Spacing: Ensure adequate spacing between plants to promote air circulation and reduce humidity, which can limit bacterial growth and spread.\n- Irrigation Management: Avoid overhead irrigation to minimize leaf wetness. Use drip irrigation or furrow irrigation to reduce the spread of bacteria.\n- Field Sanitation: Remove and destroy crop residues after harvest to reduce the inoculum levels in the field. Practice good field sanitation to prevent the spread of bacteria between seasons.\n- Resistant Varieties: Planting resistant cotton varieties is one of the most effective ways to manage bacterial blight. Consult local extension services for recommendations on resistant varieties suitable for your region.\nBy combining cultural practices, mechanical controls, biological controls, and judicious use of chemical treatments, you can effectively manage bacterial blight and maintain healthy cotton crops."
+  },
+  {
+    "id": 4,
+    "name": "cotton boll rot",
+    "img": "/src/static_images/CottonBollRot/2.jpeg",
+    "description": "Cotton boll rot, also known as boll disease or boll rot, is a significant disease affecting cotton crops worldwide. It is caused by various fungal and bacterial pathogens, including Fusarium spp., Aspergillus spp., Diplodia spp., and Xanthomonas spp. The disease leads to the decay of cotton bolls, reducing yield and fiber quality. Warm, humid conditions favor the development and spread of cotton boll rot.",
+    "damage-symptoms": "The symptoms of cotton boll rot vary depending on the pathogen involved but generally include:\n- Bolls: Infected bolls exhibit water-soaked spots that enlarge and turn brown or black. The interior of the bolls becomes discolored, and the lint may be stained, reducing fiber quality. In severe cases, bolls may rot completely, leading to significant yield losses.\n- Leaves and Stems: Fungal pathogens can cause leaf spots and stem lesions, but the primary damage is to the bolls. These symptoms can help identify the presence of boll rot pathogens in the field.",
+    "mechanical-control": "Mechanical control methods for managing cotton boll rot include:\n- Sanitation: Remove and destroy infected plant debris and bolls to reduce the source of inoculum. Clean equipment and tools regularly to prevent the spread of pathogens.\n- Pruning: Prune lower branches to improve air circulation and reduce humidity within the crop canopy, which can help prevent the spread of boll rot pathogens.\n- Crop Rotation: Rotate cotton with non-host crops to break the disease cycle and reduce pathogen buildup in the soil.",
+    "biological-control": "<p>Biological control methods involve the use of natural antagonists and enhancing overall plant health:</p><ul><li>Resistant Varieties: Planting cotton varieties that are resistant to boll rot pathogens can significantly reduce disease incidence and severity.</li><li>Beneficial Microorganisms: Introduce beneficial microorganisms, such as Trichoderma spp., which can suppress boll rot pathogens in the soil and on plant surfaces.</li><li>Soil Health: Improve soil health through the application of organic matter and compost, promoting a diverse and resilient soil microbiome that can help reduce pathogen levels.</li></ul>",
+    "chemical-control": "Chemical control methods include the use of fungicides and bactericides to manage cotton boll rot:\n- Fungicides: Apply fungicides such as azoxystrobin, pyraclostrobin, and tebuconazole to protect cotton bolls from fungal pathogens. Follow label instructions for application rates and timing to ensure effective control.\n- Bactericides: Use bactericides containing copper compounds to manage bacterial boll rot. Ensure thorough coverage of bolls and follow label directions for safe and effective use.\n- Integrated Pest Management (IPM): Incorporate chemical controls with other management practices to minimize the risk of resistance and protect beneficial organisms.",
+    "products": [
+      {
+        "name": "Azoxystrobin",
+        "description": "Azoxystrobin is a broad-spectrum fungicide used to control various fungal diseases in cotton, including boll rot. Apply according to label instructions, ensuring thorough coverage of bolls and foliage. Reapply as necessary, especially during wet weather conditions.",
+        "img": ""
+      },
+      {
+        "name": "Copper-based Bactericides",
+        "description": "Copper-based bactericides are effective in managing bacterial boll rot. Apply according to label instructions, ensuring thorough coverage of the bolls. Reapply after rainfall or as necessary to maintain protection.",
+        "img": ""
+      },
+      {
+        "name": "Trichoderma spp.",
+        "description": "Trichoderma spp. are beneficial fungi that can suppress boll rot pathogens. Apply as a soil or foliar treatment to promote plant health and reduce disease incidence. Follow product instructions for application rates and timing.",
+        "img": ""
+      }
+    ],
+    "additional-details": "Effective management of cotton boll rot involves integrating multiple control measures:\n- Regular Monitoring: Inspect cotton plants frequently for early signs of boll rot. Early detection allows for timely intervention and reduces the spread of the disease.\n- Proper Spacing: Ensure adequate spacing between plants to promote air circulation and reduce humidity, which can limit pathogen growth and spread.\n- Irrigation Management: Avoid overhead irrigation to minimize leaf and boll wetness. Use drip irrigation or furrow irrigation to reduce the spread of pathogens.\n- Field Sanitation: Remove and destroy crop residues after harvest to reduce inoculum levels in the field. Practice good field sanitation to prevent the spread of pathogens between seasons.\n- Resistant Varieties: Planting resistant cotton varieties is one of the most effective ways to manage boll rot. Consult local extension services for recommendations on resistant varieties suitable for your region.\nBy combining cultural practices, mechanical controls, biological controls, and judicious use of chemical treatments, you can effectively manage cotton boll rot and maintain healthy cotton crops."
+  },
+  {
+    "id": 5,
+    "name": "green cotton boll",
+    "img": "/src/static_images/GreenBollRott/1.jpg",
+    "description": "Green cotton bolls are immature fruiting bodies of the cotton plant. They are initially green in color and are a vital stage in cotton development, eventually maturing into the bolls that produce cotton fibers. However, green bolls are susceptible to various diseases and pests, which can significantly impact cotton yield and quality.",
+    "damage-symptoms": "Damage to green cotton bolls can occur due to a variety of factors, including pests and diseases:\n- Bollworms: Larvae of various moth species feed on green bolls, causing holes, decay, and premature drop.\n- Boll Rot: Fungal and bacterial infections can cause green bolls to rot, leading to dark, water-soaked lesions and decay of the internal tissues.\n- Aphids and Other Sap-Sucking Insects: These pests extract sap from green bolls, leading to distortion, yellowing, and reduced boll size.",
+    "mechanical-control": "Mechanical control methods for protecting green cotton bolls include:\n- Handpicking: Regularly inspect plants and manually remove pests such as bollworms and larvae from green bolls.\n- Pruning: Remove and destroy infected or damaged bolls and plant parts to prevent the spread of diseases.\n- Sanitation: Clean cultivation practices, including removing plant debris and maintaining clean tools and equipment, can help reduce the spread of pathogens and pests.",
+    "biological-control": "<p>Biological control methods focus on enhancing the presence of natural predators and beneficial organisms to protect green cotton bolls:</p><ul><li>Predatory Insects: Encourage populations of natural predators such as lady beetles, lacewings, and parasitic wasps that feed on pests affecting green bolls.</li><li>Beneficial Fungi and Bacteria: Introduce beneficial microorganisms like Trichoderma spp. and Bacillus subtilis that can outcompete or inhibit pathogenic fungi and bacteria.</li><li>Nematodes: Use entomopathogenic nematodes to target soil-dwelling stages of pests that affect green bolls.</li></ul>",
+    "chemical-control": "Chemical control methods include the use of insecticides and fungicides to protect green cotton bolls:\n- Insecticides: Apply insecticides such as spinosad, chlorantraniliprole, and neem oil to control bollworms and other insect pests. Follow label instructions for application rates and timing to ensure effective control.\n- Fungicides: Use fungicides containing active ingredients like azoxystrobin, tebuconazole, and copper compounds to manage boll rot and other fungal diseases. Ensure thorough coverage of bolls and follow label directions for safe and effective use.\n- Integrated Pest Management (IPM): Combine chemical controls with other management practices to minimize the risk of resistance and protect beneficial organisms.",
+    "products": [
+      {
+        "name": "Spinosad",
+        "description": "Spinosad is an insecticide effective against a variety of pests, including bollworms. Apply according to label instructions, ensuring thorough coverage of green bolls and foliage. Reapply as necessary to maintain protection.",
+        "img": ""
+      },
+      {
+        "name": "Neem Oil",
+        "description": "Neem oil is a natural insecticide and fungicide that can protect green bolls from a variety of pests and diseases. Dilute and apply according to label instructions, ensuring thorough coverage. Reapply every 7 to 14 days or as needed.",
+        "img": ""
+      },
+      {
+        "name": "Azoxystrobin",
+        "description": "Azoxystrobin is a broad-spectrum fungicide used to control fungal diseases in cotton, including those affecting green bolls. Apply according to label instructions, ensuring thorough coverage. Reapply as necessary, especially during wet weather conditions.",
+        "img": ""
+      },
+      {
+        "name": "Bacillus subtilis",
+        "description": "Bacillus subtilis is a beneficial bacterium that can help suppress pathogenic fungi and bacteria. Apply as a soil or foliar treatment to promote plant health and reduce disease incidence. Follow product instructions for application rates and timing.",
+        "img": ""
+      }
+    ],
+    "additional-details": "Effective management of green cotton bolls involves integrating multiple control measures:\n- Regular Monitoring: Inspect cotton plants frequently for early signs of pests and diseases affecting green bolls. Early detection allows for timely intervention and reduces the spread of the disease.\n- Proper Spacing: Ensure adequate spacing between plants to promote air circulation and reduce humidity, which can limit pathogen growth and spread.\n- Irrigation Management: Avoid overhead irrigation to minimize leaf and boll wetness. Use drip irrigation or furrow irrigation to reduce the spread of pathogens.\n- Field Sanitation: Remove and destroy crop residues after harvest to reduce inoculum levels in the field. Practice good field sanitation to prevent the spread of pathogens between seasons.\n- Resistant Varieties: Planting resistant cotton varieties is one of the most effective ways to manage diseases and pests affecting green bolls. Consult local extension services for recommendations on resistant varieties suitable for your region.\nBy combining cultural practices, mechanical controls, biological controls, and judicious use of chemical treatments, you can effectively protect green cotton bolls and maintain healthy cotton crops."
+  },
+  {
+    "id": 6,
+    "name": "target spot",
+    "img": "/src/static_images/TargetSpot/1.jpeg",
+    "description": "Target spot, caused by the fungal pathogen Corynespora cassiicola, is a significant disease affecting cotton crops. It is characterized by circular, target-like lesions on leaves, which can lead to premature defoliation and reduced yield. The disease thrives in warm, humid conditions and can spread rapidly under favorable environmental conditions.",
+    "damage-symptoms": "Symptoms of target spot in cotton include:\n- Leaves: Lesions initially appear as small, water-soaked spots that expand into circular, target-like spots with concentric rings. The spots are typically brown with a tan center and may have a yellow halo.\n- Defoliation: Severe infections can cause premature defoliation, where infected leaves fall off the plant, leading to reduced photosynthesis and lower yield.\n- Bolls: In some cases, the fungus can infect bolls, causing lesions and potential boll rot, further reducing yield and fiber quality.",
+    "mechanical-control": "Mechanical control methods for managing target spot include:\n- Sanitation: Remove and destroy infected plant debris and fallen leaves to reduce the source of inoculum. Clean equipment and tools regularly to prevent the spread of the pathogen.\n- Pruning: Prune lower branches to improve air circulation and reduce humidity within the crop canopy, which can help prevent the spread of target spot.\n- Crop Rotation: Rotate cotton with non-host crops to break the disease cycle and reduce pathogen buildup in the soil.",
+    "biological-control": "<p>Biological control methods involve the use of natural antagonists and enhancing overall plant health:</p><ul><li>Resistant Varieties: Planting cotton varieties that are resistant to target spot can significantly reduce disease incidence and severity.</li><li>Beneficial Microorganisms: Introduce beneficial microorganisms, such as Trichoderma spp., which can suppress the target spot pathogen in the soil and on plant surfaces.</li><li>Soil Health: Improve soil health through the application of organic matter and compost, promoting a diverse and resilient soil microbiome that can help reduce pathogen levels.</li></ul>",
+    "chemical-control": "Chemical control methods include the use of fungicides to manage target spot:\n- Fungicides: Apply fungicides such as azoxystrobin, pyraclostrobin, and tebuconazole to protect cotton plants from target spot. Follow label instructions for application rates and timing to ensure effective control.\n- Integrated Pest Management (IPM): Incorporate chemical controls with other management practices to minimize the risk of resistance and protect beneficial organisms.",
+    "products": [
+      {
+        "name": "Azoxystrobin",
+        "description": "Azoxystrobin is a broad-spectrum fungicide used to control various fungal diseases in cotton, including target spot. Apply according to label instructions, ensuring thorough coverage of leaves and bolls. Reapply as necessary, especially during wet weather conditions.",
+        "img": ""
+      },
+      {
+        "name": "Pyraclostrobin",
+        "description": "Pyraclostrobin is an effective fungicide for managing target spot in cotton. Apply according to label instructions, ensuring complete coverage of affected areas. Reapply as needed based on disease pressure and environmental conditions.",
+        "img": ""
+      },
+      {
+        "name": "Trichoderma spp.",
+        "description": "Trichoderma spp. are beneficial fungi that can suppress the target spot pathogen. Apply as a soil or foliar treatment to promote plant health and reduce disease incidence. Follow product instructions for application rates and timing.",
+        "img": ""
+      }
+    ],
+    "additional-details": "Effective management of target spot involves integrating multiple control measures:\n- Regular Monitoring: Inspect cotton plants frequently for early signs of target spot. Early detection allows for timely intervention and reduces the spread of the disease.\n- Proper Spacing: Ensure adequate spacing between plants to promote air circulation and reduce humidity, which can limit pathogen growth and spread.\n- Irrigation Management: Avoid overhead irrigation to minimize leaf wetness. Use drip irrigation or furrow irrigation to reduce the spread of pathogens.\n- Field Sanitation: Remove and destroy crop residues after harvest to reduce inoculum levels in the field. Practice good field sanitation to prevent the spread of pathogens between seasons.\n- Resistant Varieties: Planting resistant cotton varieties is one of the most effective ways to manage target spot. Consult local extension services for recommendations on resistant varieties suitable for your region.\nBy combining cultural practices, mechanical controls, biological controls, and judicious use of chemical treatments, you can effectively manage target spot and maintain healthy cotton crops."
+  },
+  {
+    "id": 7,
+    "name": "powdery mildew",
+    "img": "/src/static_images/Powdery_Mildew/1.webp",
+    "description": "Powdery mildew is a fungal disease caused by Erysiphe cichoracearum and other related species. It affects the aerial parts of the cotton plant, primarily the leaves, stems, and bolls. The disease is characterized by white to grayish powdery fungal growth on the surface of the plant tissue. Powdery mildew thrives in dry, warm conditions and can spread rapidly if not managed properly.",
+    "damage-symptoms": "Symptoms of powdery mildew in cotton include:\n- Leaves: White or grayish powdery spots appear on the upper and lower surfaces of leaves. As the infection progresses, the spots enlarge and coalesce, covering entire leaves. Infected leaves may become distorted, yellow, and eventually drop prematurely.\n- Stems: The fungus can also infect young stems, leading to stunted growth and reduced vigor.\n- Bolls: In severe cases, powdery mildew can affect bolls, leading to poor boll opening and reduced fiber quality.",
+    "mechanical-control": "Mechanical control methods for managing powdery mildew include:\n- Sanitation: Remove and destroy infected plant debris and fallen leaves to reduce the source of inoculum. Clean equipment and tools regularly to prevent the spread of the pathogen.\n- Pruning: Prune infected leaves and stems to improve air circulation and reduce humidity within the crop canopy, which can help prevent the spread of powdery mildew.\n- Weed Control: Manage weeds that can harbor the fungus and act as a source of infection for cotton plants.",
+    "biological-control": "<p>Biological control methods involve the use of natural antagonists and enhancing overall plant health:</p><ul><li>Resistant Varieties: Planting cotton varieties that are resistant to powdery mildew can significantly reduce disease incidence and severity.</li><li>Beneficial Microorganisms: Introduce beneficial microorganisms, such as Bacillus subtilis and Trichoderma harzianum, which can suppress the powdery mildew pathogen on plant surfaces.</li><li>Soil Health: Improve soil health through the application of organic matter and compost, promoting a diverse and resilient soil microbiome that can help reduce pathogen levels.</li></ul>",
+    "chemical-control": "Chemical control methods include the use of fungicides to manage powdery mildew:\n- Fungicides: Apply fungicides such as sulfur, potassium bicarbonate, and myclobutanil to protect cotton plants from powdery mildew. Follow label instructions for application rates and timing to ensure effective control.\n- Integrated Pest Management (IPM): Incorporate chemical controls with other management practices to minimize the risk of resistance and protect beneficial organisms.",
+    "products": [
+      {
+        "name": "Sulfur",
+        "description": "Sulfur is an effective fungicide for controlling powdery mildew. Apply according to label instructions, ensuring thorough coverage of leaves and stems. Reapply as necessary, especially during favorable conditions for disease development.",
+        "img": ""
+      },
+      {
+        "name": "Potassium Bicarbonate",
+        "description": "Potassium bicarbonate is a contact fungicide that can help manage powdery mildew. Apply as a foliar spray according to label instructions. Ensure complete coverage of affected areas and reapply as needed.",
+        "img": ""
+      },
+      {
+        "name": "Myclobutanil",
+        "description": "Myclobutanil is a systemic fungicide effective against powdery mildew. Apply according to label instructions, ensuring thorough coverage of infected plants. Reapply as necessary based on disease pressure and environmental conditions.",
+        "img": ""
+      },
+      {
+        "name": "Bacillus subtilis",
+        "description": "Bacillus subtilis is a beneficial bacterium that can help suppress powdery mildew. Apply as a foliar treatment to promote plant health and reduce disease incidence. Follow product instructions for application rates and timing.",
+        "img": ""
+      }
+    ],
+    "additional-details": "Effective management of powdery mildew involves integrating multiple control measures:\n- Regular Monitoring: Inspect cotton plants frequently for early signs of powdery mildew. Early detection allows for timely intervention and reduces the spread of the disease.\n- Proper Spacing: Ensure adequate spacing between plants to promote air circulation and reduce humidity, which can limit pathogen growth and spread.\n- Irrigation Management: Avoid overhead irrigation to minimize leaf wetness. Use drip irrigation or furrow irrigation to reduce the spread of pathogens.\n- Field Sanitation: Remove and destroy crop residues after harvest to reduce inoculum levels in the field. Practice good field sanitation to prevent the spread of pathogens between seasons.\n- Resistant Varieties: Planting resistant cotton varieties is one of the most effective ways to manage powdery mildew. Consult local extension services for recommendations on resistant varieties suitable for your region.\nBy combining cultural practices, mechanical controls, biological controls, and judicious use of chemical treatments, you can effectively manage powdery mildew and maintain healthy cotton crops."
+  }
+
+]
