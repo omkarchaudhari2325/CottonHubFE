@@ -3,7 +3,6 @@ import axios from "axios";
 import { AiFillCloseCircle } from "react-icons/ai";
 import Chattingld from "./Chattingld";
 
-
 const ChatBot = ({ isChatBotOpen, setChatBotOpen }) => {
   const [messages, setMessages] = useState(["Welcome to chatbot!"]);
   const [inputValue, setInputValue] = useState("");
@@ -27,7 +26,7 @@ const ChatBot = ({ isChatBotOpen, setChatBotOpen }) => {
 
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/generate",
+          "https://cotton-hub.vercel.app/api/v1/generate",
           { prompt: userMessage }
         );
         const aiResponse = formatResponse(response.data);

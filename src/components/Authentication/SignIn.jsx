@@ -14,7 +14,7 @@ import { useGoogleLogin } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
 // import { N } from "react-router-dom";
 // import {jwt_decode} from "jwt-decode";
-axios.defaults.baseURL = `http://localhost:3000`;
+axios.defaults.baseURL = `https://cotton-hub.vercel.app/`;
 
 const SignIn = () => {
   // var token = "";
@@ -69,7 +69,7 @@ const SignIn = () => {
     try {
       // const token = localStorage.getItem("userDataToken");
       const response = await axios.get(
-        "http://localhost:3000/api/v1/get-token"
+        "https://cotton-hub.vercel.app/api/v1/get-token"
       );
       const data = response.data;
       setLoginData(data);
@@ -140,14 +140,14 @@ const SignIn = () => {
             className="flex w-[60%] items-center justify-center bg-cover bg-center h-[80vh]"
             style={{ backgroundImage: `url(${background})` }}
           >
-
-
             {/* Your content goes here */}
           </div>
 
           {/* </div> */}
           <div className="w-full lg:w-1/2 p-8 md:p-12 lg:p-20">
-            <h2 className="text-2xl font-bold font-mulish mb-4">You have been missed , sign in</h2>
+            <h2 className="text-2xl font-bold font-mulish mb-4">
+              You have been missed , sign in
+            </h2>
             <form onSubmit={submitHandler}>
               <div className="mb-4">
                 <input

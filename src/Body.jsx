@@ -8,7 +8,7 @@ import Footer from '../Footer';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from "../../context/AuthContext";
 import axios from 'axios';
-axios.defaults.baseURL = `http://localhost:3000`;
+axios.defaults.baseURL = `https://cotton-hub.vercel.app/`;
 
 const Body = () => {
   const {login,setLogin} = useContext(AuthContext);

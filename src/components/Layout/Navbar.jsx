@@ -11,7 +11,7 @@ import { AuthContext } from "../../context/AuthContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const{login,setLogin} = useContext(AuthContext);
+  const { login, setLogin } = useContext(AuthContext);
   // console.log(login)
   // const { login, setLogin } = useContext(AuthContext);
   // const [login,setLogin] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
   const [loginData, setLoginData] = useState([]);
 
-  const{data} = useContext(AuthContext);
+  const { data } = useContext(AuthContext);
   // console.log("Here here this is the data " + data);
 
   // const [loggedIn, setIsLoggedIn] = useState(false);
@@ -32,11 +32,11 @@ const Navbar = () => {
     try {
       // const token = localStorage.getItem("userDataToken");
       const response = await axios.get(
-        "http://localhost:3000/api/v1/get-token"
+        "https://cotton-hub.vercel.app/api/v1/get-token"
       );
       const data = response.data;
       setLoginData(data);
-      localStorage.setItem("data",JSON.stringify(data));
+      localStorage.setItem("data", JSON.stringify(data));
       // setIsLoggedIn(true);
     } catch (err) {
       // console.error("Error fetching user data:", err);
@@ -61,7 +61,7 @@ const Navbar = () => {
   const notify = () => {
     toast("Here is a toast example");
   };
-  console.log(localStorage.getItem("data"))
+  console.log(localStorage.getItem("data"));
 
   const logoutHandler = () => {
     // setIsLoggedIn(false);
@@ -73,7 +73,7 @@ const Navbar = () => {
   useEffect(() => {
     isDashboardValid();
   }, []);
-  console.log("I have got data from context like " , data)
+  console.log("I have got data from context like ", data);
 
   return (
     // <div>
@@ -137,22 +137,23 @@ const Navbar = () => {
                 <span className="absolute left-0 w-full h-0.5 bg-blue-500 bottom-0 transition-all duration-300 transform scale-x-0 line"></span>
               </h2>
             </Link> */}
-            { !login  &&
-
+            {!login && (
               <Link to="/signin">
                 <button className="relative bg-gradient-to-r from-yellow-400 to-red-500 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 w-36 overflow-hidden group">
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent translate-x-full transition-transform duration-300 group-hover:translate-x-0 "></span>
                   <p className="font-mulish font-bold">Sign in</p>
                 </button>
               </Link>
-            }
+            )}
 
             <Link to="/all-diseases">
               <h2
                 className="text-black heading text-xl font-semibold cursor-pointer inline-block relative duration-200
             font-mullish py-2 transition-all hover:text-light-blue-900 group lg:block"
               >
-                <a href="" className="text-yellow-900">Diseases</a>
+                <a href="" className="text-yellow-900">
+                  Diseases
+                </a>
                 <div class="absolute w-full bg-light-blue-200 bottom-0 hidden group-hover:block transition-all duration-200 "></div>
               </h2>
             </Link>
@@ -173,18 +174,18 @@ const Navbar = () => {
                 className="text-black heading transition duration-500 cursor-pointer font-mulish  text-[xl] inline-block relative
             font-mullish py-2 hover:text-lightBlue   group lg:block hover:text-light-blue-900"
               >
-                <h1  className="font-bold">About</h1>
+                <h1 className="font-bold">About</h1>
                 <div class="absolute w-full bg-light-blue-200 bottom-0 hidden group-hover:block transition-all duration-200 "></div>
               </h2>
             </Link>
 
             {/* Profile icon */}
-            {login &&  (
+            {login && (
               <div className="relative flex " ref={dropdownRef}>
                 <div className="flex">
                   <span className="font-bold mt-3 text-sm text-blue-900 ">
-                  {data && data.firstName && data.firstName.substring(0, 15)}
-                  {/* {data && data.firstName && data.firstName.substring(0, 15)} */}
+                    {data && data.firstName && data.firstName.substring(0, 15)}
+                    {/* {data && data.firstName && data.firstName.substring(0, 15)} */}
                   </span>
                   <p className="mr-3 mt-3"></p>
                   <button
@@ -193,9 +194,10 @@ const Navbar = () => {
                     className="text-white   font-medium text-sm  py-2.5 text-center inline-flex items-center  w-24  relative"
                   >
                     <img
-                      src={loginData &&  data &&  data?.profileImageUrl}
+                      src={loginData && data && data?.profileImageUrl}
                       className="object-cover rounded-full w-12 h-12 absolute"
-                      alt="porfile-image" loading="lazy"
+                      alt="porfile-image"
+                      loading="lazy"
                     />
                   </button>
                 </div>
@@ -210,7 +212,7 @@ const Navbar = () => {
                     aria-labelledby="multiLevelDropdownButton"
                   >
                     <li className="text-black p-2 mt-1 font-bold">
-                    {login && data && `Hey ${loginData  && data?.firstName}!`}
+                      {login && data && `Hey ${loginData && data?.firstName}!`}
                     </li>
                     <hr className="font-bold text-gray-900 border-gray-700 mb-3" />
                     <li>
@@ -223,13 +225,10 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                    <Link to="/dashboard/change-pass">
-                      <a
-
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:rounded-lg text-black dark:hover:text-white"
-                      >
-                        Change Pass
-                      </a>
+                      <Link to="/dashboard/change-pass">
+                        <a className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:rounded-lg text-black dark:hover:text-white">
+                          Change Pass
+                        </a>
                       </Link>
                     </li>
                     <li>

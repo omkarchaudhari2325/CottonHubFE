@@ -6,18 +6,18 @@ import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import Loader from "../Loaders/Loader";
-axios.defaults.baseURL = `http://localhost:3000`;
+axios.defaults.baseURL = `https://cotton-hub.vercel.app/`;
 
 const EditUser = () => {
-    const {login,setLogin} = useContext(AuthContext)
-    const {data,setData} = useContext(AuthContext);
-    const navigate = useNavigate();
-    const {id} = useParams();
-    // console.log(id)
-    // const [imageUploadLoading,setImageUploadLoading] = useState(false);
+  const { login, setLogin } = useContext(AuthContext);
+  const { data, setData } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const { id } = useParams();
+  // console.log(id)
+  // const [imageUploadLoading,setImageUploadLoading] = useState(false);
   const [loginData, setLoginData] = useState({});
   const [loggedIn, setIsLoggedIn] = useState(false);
-  const [loading,setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -32,7 +32,7 @@ const EditUser = () => {
         const response = await axios.get("/api/v1/get-token");
         const data = response.data;
         setLoginData(data);
-        setLogin(true)
+        setLogin(true);
         setIsLoggedIn(true);
         setData(data?.user);
         // Set initial values for input fields
@@ -44,7 +44,7 @@ const EditUser = () => {
       } catch (error) {
         console.error("Error fetching user data:", error);
         setIsLoggedIn(false);
-        setLogin(false)
+        setLogin(false);
         setData({});
       }
     };
@@ -54,23 +54,19 @@ const EditUser = () => {
   const handleSave = async () => {
     console.log(userData);
 
-    try{
-        const response = await axios.post("/api/v1/update-user/"+id,userData);
+    try {
+      const response = await axios.post("/api/v1/update-user/" + id, userData);
 
-        const data = await response.data;
-        toast.success("User updated successfully")
-        setData(data && data?.user);
-        console.log(data);
+      const data = await response.data;
+      toast.success("User updated successfully");
+      setData(data && data?.user);
+      console.log(data);
 
-
-        navigate("/dashboard");
-
-
-    }
-    catch(err){
-        console.log(err);
-        toast.error(err?.response?.data?.message);
-        setData(null);
+      navigate("/dashboard");
+    } catch (err) {
+      console.log(err);
+      toast.error(err?.response?.data?.message);
+      setData(null);
     }
   };
 
@@ -92,7 +88,7 @@ const EditUser = () => {
     try {
       const formData = new FormData();
       formData.append("file", imageFile);
-        setLoading(true);
+      setLoading(true);
       const response = await axios.post("/api/v1/profilePicture", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
@@ -105,17 +101,14 @@ const EditUser = () => {
       setLoading(false);
       window.location.reload();
 
-
       toast.success("Image uploaded successfully");
-
-
     } catch (error) {
       console.error("Error uploading image:", error);
       toast.error("Error uploading image");
     }
   };
 
-  console.log("This is the data i am receving",data)
+  console.log("This is the data i am receving", data);
 
   return (
     <div className="bg-gray-100 min-h-screen flex justify-center items-center mt-20">
@@ -126,16 +119,18 @@ const EditUser = () => {
               src={loginData.user && loginData.user.profileImageUrl}
               alt="Profile"
               className="w-[300px] h-[300px] rounded-full mb-4"
-            />{ loading &&
+            />
+            {loading && (
               <div>
-              <Loader />
-              <p>Please wait...</p>
+                <Loader />
+                <p>Please wait...</p>
               </div>
-
-
-            }
+            )}
             <div className="flex gap-14 items-center mt-4 mb-4">
-              <label htmlFor="imageUpload" className="relative cursor-pointer border p-2 flex items-center justify-center rounded-sm">
+              <label
+                htmlFor="imageUpload"
+                className="relative cursor-pointer border p-2 flex items-center justify-center rounded-sm"
+              >
                 <input
                   id="imageUpload"
                   className="hidden"
@@ -148,7 +143,6 @@ const EditUser = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-
                 >
                   <path
                     strokeLinecap="round"
@@ -157,15 +151,18 @@ const EditUser = () => {
                     d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                   />
                 </svg>
-                <span className="ml-8 text-gray-600">{imageName ? imageName : "Choose Image"}</span>
+                <span className="ml-8 text-gray-600">
+                  {imageName ? imageName : "Choose Image"}
+                </span>
               </label>
               <button
                 disabled={loading}
                 onClick={handleUploadImage}
-                className={loading ?
-             "loading-class px-4 py-2 ml-4 bg-blue-300 text-white rounded-md  transition duration-300 border border-blue-500" :
-             "normal-class px-4 py-2 ml-4 bg-blue-600 text-white rounded-md hover:bg-blue-600 transition duration-300 border border-blue-500"}
-
+                className={
+                  loading
+                    ? "loading-class px-4 py-2 ml-4 bg-blue-300 text-white rounded-md  transition duration-300 border border-blue-500"
+                    : "normal-class px-4 py-2 ml-4 bg-blue-600 text-white rounded-md hover:bg-blue-600 transition duration-300 border border-blue-500"
+                }
               >
                 Upload Image
               </button>

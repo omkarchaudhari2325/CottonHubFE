@@ -1,29 +1,27 @@
 import React from "react";
-import omkarImg from "../assets/developers_images/new.jpg"
-import aviImg from "../assets/developers_images/avi-modified.png"
-import sumitImg from "../assets/developers_images/sumit-modified.png"
-import anilImg from "../assets/developers_images/anil-modified.png"
-import { useState,useEffect } from "react";
+import omkarImg from "../assets/developers_images/new.jpg";
+import aviImg from "../assets/developers_images/avi-modified.png";
+import sumitImg from "../assets/developers_images/sumit-modified.png";
+import anilImg from "../assets/developers_images/anil-modified.png";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import reactImg from "../assets/technology_images/react.png"
-import flaskImg from "../assets/technology_images/flask.png"
-import nodeImg from "../assets/technology_images/node.png"
-import tailwindImg from "../assets/technology_images/tailwind.webp"
-import mongoImg from "../assets/technology_images/mongo.jpg"
-import deepImg from "../assets/technology_images/deep.webp"
+import reactImg from "../assets/technology_images/react.png";
+import flaskImg from "../assets/technology_images/flask.png";
+import nodeImg from "../assets/technology_images/node.png";
+import tailwindImg from "../assets/technology_images/tailwind.webp";
+import mongoImg from "../assets/technology_images/mongo.jpg";
+import deepImg from "../assets/technology_images/deep.webp";
 
-
-const TeamMemberCard = ({ name, role, description ,contact,email,image}) => {
-
+const TeamMemberCard = ({ name, role, description, contact, email, image }) => {
   const { login, setLogin } = useContext(AuthContext);
   const { data, setData } = useContext(AuthContext);
   const isDashboardValid = async () => {
     try {
       // const token = localStorage.getItem("userDataToken");
       const response = await axios.get(
-        "http://localhost:3000/api/v1/get-token"
+        "https://cotton-hub.vercel.app/api/v1/get-token"
       );
       const data = response.data;
       // setLoginData(data);
@@ -42,28 +40,31 @@ const TeamMemberCard = ({ name, role, description ,contact,email,image}) => {
     isDashboardValid();
   }, []);
   return (
-
     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
-      <img src={image} height={250} width={250} className="rounded-full"  alt="demo" />
+      <img
+        src={image}
+        height={250}
+        width={250}
+        className="rounded-full"
+        alt="demo"
+      />
       <h3 className="text-xl font-bold mt-4 mb-1 text-blue-800">{name}</h3>
       <p className="text-gray-900 mb-4 font-semibold">{role}</p>
       <div>
-      <p className="text-gray-700 mb-1">{description}</p>
-      <p className="text-gray-700"> Contact : +91 {contact}</p>
-      <p className="text-gray-700">Email id : {email}</p>
-
+        <p className="text-gray-700 mb-1">{description}</p>
+        <p className="text-gray-700"> Contact : +91 {contact}</p>
+        <p className="text-gray-700">Email id : {email}</p>
       </div>
-
     </div>
   );
 };
-const TechnologyCard = ({ technology, description,image }) => {
+const TechnologyCard = ({ technology, description, image }) => {
   return (
     <div className="bg-white max-w-[1200px] mx-auto shadow-md rounded-lg p-6 flex flex-col items-center">
       {/* Placeholder for image */}
 
       <div className="w-36 h-36 mb-4">
-        <img src={image} alt="tech_img"  />
+        <img src={image} alt="tech_img" />
       </div>
       <h3 className="text-xl font-bold mb-2">{technology}</h3>
       <p className="text-lg text-center text-gray-600">{description}</p>
@@ -89,9 +90,7 @@ const About = () => {
           <div className="mt-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
-                <h3 className="text-lg font-bold text-gray-900">
-                  Our Mission
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900">Our Mission</h3>
                 <p className="mt-2 text-gray-800 text-justify ">
                   At Cotton Hub, our mission is to revolutionize the cotton
                   industry by leveraging the power of machine learning to detect
@@ -105,9 +104,7 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-900">
-                  Our Vision
-                </h3>
+                <h3 className="text-lg font-bold text-gray-900">Our Vision</h3>
                 <p className="mt-2 text-gray-800 text-justify">
                   Our objective at Cotton Hub is clear: to develop and deploy
                   advanced machine learning algorithms capable of accurately
@@ -128,8 +125,8 @@ const About = () => {
           <div className="mt-10">
             <h3 className="text-xl font-bold  text-gray-900">Our Team</h3>
             <p className="mt-2 text-black">
-              Meet the talented individuals behind Cotton's Hub who are dedicated
-              to revolutionizing cotton plant disease detection.
+              Meet the talented individuals behind Cotton's Hub who are
+              dedicated to revolutionizing cotton plant disease detection.
             </p>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -137,16 +134,16 @@ const About = () => {
                   name="Omkar Chaudhari"
                   role="Lead Developer"
                   description="Omkar is good at Web Deveopment and have contributed on the UI part of the project and model part as well."
-                  contact = "9730687707"
-                  email = "chaudhariomkar369@gmail.com"
-                  image = {omkarImg}
+                  contact="9730687707"
+                  email="chaudhariomkar369@gmail.com"
+                  image={omkarImg}
                 />
                 <TeamMemberCard
                   name="Sumit Chaskar"
                   role="Developer"
                   description="Sumit has handled most of the part of the Deep learning and prepared the model."
-                  contact = "7708301982"
-                  email = "sumitchaskar2000@gmail.com"
+                  contact="7708301982"
+                  email="sumitchaskar2000@gmail.com"
                   image={sumitImg}
                 />
                 {/* Add more team member cards here */}
@@ -158,16 +155,16 @@ const About = () => {
                   name="Avinash Baikare"
                   role="Developer"
                   description="Avinash worked on the UI part as well as the documentation of the project."
-                  contact = "7499747397"
-                  email = "c@gmail.com"
+                  contact="7499747397"
+                  email="c@gmail.com"
                   image={aviImg}
                 />
                 <TeamMemberCard
                   name="Anil Gujar"
                   role="Developer"
                   description="Anil has good hands on machine learning and deep learning and assisted while preparing the model of the project."
-                  contact = "8766817157"
-                  email = "anil@gmail.com"
+                  contact="8766817157"
+                  email="anil@gmail.com"
                   image={anilImg}
                 />
                 {/* Add more team member cards here */}
@@ -187,27 +184,27 @@ const About = () => {
               <TechnologyCard
                 technology="Deep Learning"
                 description="Utilized for advanced pattern recognition and data analysis, enabling accurate disease detection."
-                image = {deepImg}
+                image={deepImg}
               />
               <TechnologyCard
                 technology="React"
                 description="A JavaScript library for building user interfaces, providing a fast and efficient development experience."
-                image = {reactImg}
+                image={reactImg}
               />
               <TechnologyCard
                 technology="Node.js"
                 description="A JavaScript runtime built on Chrome's V8 JavaScript engine, allowing scalable and efficient server-side applications."
-                image = {nodeImg}
+                image={nodeImg}
               />
               <TechnologyCard
                 technology="MongoDB"
                 description="A NoSQL database used for storing and managing data, offering flexibility and scalability for modern applications."
-                image = {mongoImg}
+                image={mongoImg}
               />
               <TechnologyCard
                 technology="Flask"
                 description="A lightweight web framework for Python, ideal for building RESTful APIs and web applications with simplicity and flexibility."
-                image = {flaskImg}
+                image={flaskImg}
               />
               <TechnologyCard
                 technology="Tailwind CSS"

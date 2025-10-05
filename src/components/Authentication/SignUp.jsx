@@ -1,10 +1,10 @@
-import React, { useState,useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import background from "../../assets/login_signup_image.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
 import toast from "react-hot-toast";
-axios.defaults.baseURL = `http://localhost:3000`;
+axios.defaults.baseURL = `https://cotton-hub.vercel.app/`;
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import Loader from "../Loaders/Loader";
 import MainLoader from "../Loaders/MainLoader";
@@ -18,7 +18,7 @@ const SignUp = () => {
   // const navigate = useNavigate();
   const [user, setUser] = useState([]);
   const [profile, setProfile] = useState([]);
-  const {login,setLogin} = useContext(AuthContext)
+  const { login, setLogin } = useContext(AuthContext);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -38,7 +38,6 @@ const SignUp = () => {
   const loginUser = useGoogleLogin({
     onSuccess: (codeResponse) => setUser(codeResponse),
     onError: (error) => console.log("Login Failed:", error),
-
   });
   const changeHandler = (e) => {
     const { name, value, type, checked } = e.target;
@@ -51,22 +50,10 @@ const SignUp = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     // console.log(formData);
-    const {
-      password,
-      confirmPassword,
-      email,
-      firstName,
-      lastName,
-      isChecked,
-    } = formData;
+    const { password, confirmPassword, email, firstName, lastName, isChecked } =
+      formData;
 
-    if (
-      !confirmPassword ||
-      !email ||
-      !firstName ||
-      !lastName ||
-      !password
-    ) {
+    if (!confirmPassword || !email || !firstName || !lastName || !password) {
       // alert("Going inside")
       toast.error("All fields are necessary");
       return;
@@ -126,13 +113,11 @@ const SignUp = () => {
       console.log(error.response.data.error);
       toast.error(error.response.data.error);
       setTimeout(() => {
-        setLoading(false)
-
-      },200)
+        setLoading(false);
+      }, 200);
       // navigate("/register")
     }
   };
-
 
   // const isGoogleUserValid = async () => {
   //   if (user) {
@@ -183,24 +168,25 @@ const SignUp = () => {
   //   }
 
   // };
-  const handleGoogle = async () =>{
-    if(user){
-      try{
-
-        const response = await axios.post("http://localhost:3000/api/v1/getToken",user);
+  const handleGoogle = async () => {
+    if (user) {
+      try {
+        const response = await axios.post(
+          "https://cotton-hub.vercel.app/api/v1/getToken",
+          user
+        );
         const data = await response.data;
         console.log(data);
-        localStorage.setItem("userDataToken2",data.result);
+        localStorage.setItem("userDataToken2", data.result);
         // setLogin(true);
 
-
         // console.log(login)
-      }catch(err){
+      } catch (err) {
         console.log(err);
         // setLogin(false)
       }
     }
-  }
+  };
   const checkTokenValidity = async () => {
     const token = localStorage.getItem("userDataToken");
     if (!token) {
@@ -216,32 +202,31 @@ const SignUp = () => {
       const data = response.data;
       if (data.success) {
         toast.success("You are already logged in.");
-        setLogin(true)
+        setLogin(true);
         navigate("/predict");
       }
     } catch (error) {
       console.error("Error checking token validity:", error);
-      setLogin(false)
+      setLogin(false);
     } finally {
       setLoading(false); // Stop loading
     }
   };
 
-  const googleLoginVerfier = async () =>{
+  const googleLoginVerfier = async () => {
     const token = localStorage.getItem("userDataToken2");
-    console.log("got the token" , token)
-    try{
-      const response = await axios.get("/api/v1/googleLoginVerifier",{
+    console.log("got the token", token);
+    try {
+      const response = await axios.get("/api/v1/googleLoginVerifier", {
         headers: {
           Authorization: token,
-        }
-      })
-      console.log(response.data)
+        },
+      });
+      console.log(response.data);
+    } catch (err) {
+      console.log(err);
     }
-    catch(err){
-      console.log(err)
-    }
-  }
+  };
   // const checkTokenValidity = async () => {
   //   const token = localStorage.getItem("userDataToken");
   //   if (!token) {
@@ -273,16 +258,12 @@ const SignUp = () => {
     googleLoginVerfier();
     // isGoogleUserValid();
     // checkTokenValidity();
-
-  },[user]);
-
+  }, [user]);
 
   return (
     <div>
       {loading ? (
-
         <MainLoader />
-
       ) : (
         <div className="min-h-screen py-32 overflow-y-scroll bg-gray-100 overflow-hidden">
           <div className="container mx-auto p-5 min-h-screen">
@@ -398,17 +379,11 @@ const SignUp = () => {
                     />
                     <span className="p-2 font-mulish">
                       I accept the{" "}
-                      <a
-                        href="#"
-                        className="text-purple-500 font-semibold"
-                      >
+                      <a href="#" className="text-purple-500 font-semibold">
                         Terms of Use
                       </a>{" "}
                       &amp;{" "}
-                      <a
-                        href="#"
-                        className="text-purple-500 font-semibold"
-                      >
+                      <a href="#" className="text-purple-500 font-semibold">
                         Privacy Policy
                       </a>
                     </span>
@@ -417,7 +392,10 @@ const SignUp = () => {
                     <button className="w-full font-mulish bg-purple-600 py-3 text-center hover:bg-purple-500 text-white rounded-md">
                       Register Now
                     </button>
-                    <button className="px-4 py-3 mt-3 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150 w-full items-center justify-center" onClick={loginUser}>
+                    <button
+                      className="px-4 py-3 mt-3 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150 w-full items-center justify-center"
+                      onClick={loginUser}
+                    >
                       <img
                         className="w-6 h-6"
                         src="https://www.svgrepo.com/show/475656/google-color.svg"

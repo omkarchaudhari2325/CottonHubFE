@@ -23,7 +23,7 @@ const Main = () => {
     try {
       // const token = localStorage.getItem("userDataToken");
       const response = await axios.get(
-        "http://localhost:3000/api/v1/get-token"
+        "https://cotton-hub.vercel.app/api/v1/get-token"
       );
       // const data = await response.data;
       const resData = await response.data.user;

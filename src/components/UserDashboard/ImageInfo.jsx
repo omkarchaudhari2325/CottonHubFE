@@ -5,10 +5,10 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import Shimmer from "../Shimmer/Shimmer";
 import Loader from "../Loaders/Loader";
-axios.defaults.baseURL = `http://localhost:3000`;
+axios.defaults.baseURL = `https://cotton-hub.vercel.app/`;
 const ImageInfo = ({ cardData }) => {
   const [showModal, setShowModal] = useState(false);
-  const [loading,setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const deleteHandler = async () => {
     setShowModal(true);
   };
@@ -28,7 +28,7 @@ const ImageInfo = ({ cardData }) => {
       setIsDeleted(true); // Set state to indicate that the image has been deleted
       console.log("Image deleted successfully");
     } catch (error) {
-      setLoading(false)
+      setLoading(false);
       console.error("Error deleting image:", error);
       // Handle error
     }
@@ -86,27 +86,26 @@ const ImageInfo = ({ cardData }) => {
           <div className="modal-container bg-white w-96 rounded-lg shadow-lg z-50 p-6">
             <h1 className="text-xl font-semibold mb-4">Confirm Deletion</h1>
             <p className="mb-4">Are you sure you want to delete the Record?</p>
-            {loading  ? (
+            {loading ? (
               <div className="flex justify-center">
-              <Loader />
+                <Loader />
               </div>
-            )
-            :
-            <div className="flex justify-end">
-              <button
-                className="btn bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2"
-                onClick={confirmDelete}
-              >
-                Delete
-              </button>
-              <button
-                className="btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
-                onClick={cancelDelete}
-              >
-                Cancel
-              </button>
-            </div>
-            }
+            ) : (
+              <div className="flex justify-end">
+                <button
+                  className="btn bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2"
+                  onClick={confirmDelete}
+                >
+                  Delete
+                </button>
+                <button
+                  className="btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                  onClick={cancelDelete}
+                >
+                  Cancel
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}

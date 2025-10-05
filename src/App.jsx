@@ -21,7 +21,7 @@ const App = () => {
   const isDashboardValid = async () => {
     try {
       // const token = localStorage.getItem("userDataToken");
-        const response = await axios.get("http://localhost:3000/api/v1/get-token");
+        const response = await axios.get("https://cotton-hub.vercel.app/api/v1/get-token");
         const data = response.data;
         setLoginData(data);
         setIsLoggedIn(true)

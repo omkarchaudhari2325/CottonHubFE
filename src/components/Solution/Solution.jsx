@@ -9,7 +9,7 @@ import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 import ChatBot from "../ChatBot/ChatBot";
 const Solution = () => {
-  const[isChatBotOpen,setChatBotOpen] = useState(false);
+  const [isChatBotOpen, setChatBotOpen] = useState(false);
   const navigate = useNavigate();
 
   const { login, setLogin } = useContext(AuthContext);
@@ -24,7 +24,7 @@ const Solution = () => {
     try {
       // const token = localStorage.getItem("userDataToken");
       const response = await axios.get(
-        "http://localhost:3000/api/v1/get-token"
+        "https://cotton-hub.vercel.app/api/v1/get-token"
       );
       const data = response.data;
       // setLoginData(data);
@@ -47,7 +47,7 @@ const Solution = () => {
     // window.scrollTo(0, 0);
   }, []);
 
-  console.log("The data from the solution " , data)
+  console.log("The data from the solution ", data);
   if (!disease) {
     // Handle case when disease is not found
     return <div className="text-center max-w-[1100px] mt-32">Coming Soon!</div>;
@@ -81,7 +81,9 @@ const Solution = () => {
       </div>
       <h1 className="font-bold text-2xl">Biologial Control : </h1>
       <div className="description mb-8 mt-4 text-left">
-        <p  dangerouslySetInnerHTML={{ __html: disease["biological-control"] }}></p>
+        <p
+          dangerouslySetInnerHTML={{ __html: disease["biological-control"] }}
+        ></p>
       </div>
       <h1 className="font-bold text-2xl">Chemical Control : </h1>
       <div className="description mb-8 mt-4 text-left">
@@ -117,10 +119,12 @@ const Solution = () => {
 
       {isChatBotOpen && (
         <div className="chat-bot absolute bottom-0 right-[-100px] rounded-e-2xlxl shadow-lg">
-          <ChatBot isChatBotOpen = {isChatBotOpen} setChatBotOpen = {setChatBotOpen} />
+          <ChatBot
+            isChatBotOpen={isChatBotOpen}
+            setChatBotOpen={setChatBotOpen}
+          />
         </div>
       )}
-
     </div>
   );
 };

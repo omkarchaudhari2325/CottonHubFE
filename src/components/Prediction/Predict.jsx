@@ -12,71 +12,69 @@ import { AuthContext } from "../../context/AuthContext";
 // import axios from "axios";
 
 const Predict = () => {
-
   // const [login,isLoggedIn] = useState(false);
-  const {login,setLogin} = useContext(AuthContext);
-  const{data,setData} = useContext(AuthContext)
-  const [loginData,setLoginData] = useState(null);
-  const [loginGoogle,setLoginGoogle] = useState(false);
+  const { login, setLogin } = useContext(AuthContext);
+  const { data, setData } = useContext(AuthContext);
+  const [loginData, setLoginData] = useState(null);
+  const [loginGoogle, setLoginGoogle] = useState(false);
   const navigate = useNavigate();
 
   const isDashBoardValid = async () => {
-      try {
-        // const token = localStorage.getItem("userDataToken");
-          const response = await axios.get("http://localhost:3000/api/v1/get-token");
-          const resData = await response.data.user;
-          setLoginData(data);
+    try {
+      // const token = localStorage.getItem("userDataToken");
+      const response = await axios.get(
+        "https://cotton-hub.vercel.app/api/v1/get-token"
+      );
+      const resData = await response.data.user;
+      setLoginData(data);
 
-          setData(resData);
-          setLogin(true);
-          // isLoggedIn(true);
+      setData(resData);
+      setLogin(true);
+      // isLoggedIn(true);
+    } catch (err) {
+      console.error("Error fetching user data:", err);
+      setLoginData(null);
+      setData({});
+      // isLoggedIn(false);
+      setLogin(false);
+      navigate("/inValidUser");
+    }
+  };
 
+  //   const isGoogleValid = async () => {
+  //     let token = localStorage.getItem("userDataToken2");
 
-      } catch (err) {
-        console.error('Error fetching user data:', err);
-        setLoginData(null);
-        setData({})
-        // isLoggedIn(false);
-        setLogin(false);
-        navigate("/inValidUser")
-      }
-  }
+  //     try{
+  //         const response = await axios.get("api/v1/validUser", {
+  //             headers : {
+  //                 Authorization : token,
+  //             },
+  //         });
 
-//   const isGoogleValid = async () => {
-//     let token = localStorage.getItem("userDataToken2");
+  //         const data = await response.data;
+  //         setLoginData(data);
+  //         console.log(data);
+  //         // toast.success("user verified");
+  //         setLogin(true);
 
-//     try{
-//         const response = await axios.get("api/v1/validUser", {
-//             headers : {
-//                 Authorization : token,
-//             },
-//         });
+  //         // navigate("/dashboard");
 
-//         const data = await response.data;
-//         setLoginData(data);
-//         console.log(data);
-//         // toast.success("user verified");
-//         setLogin(true);
+  //     }
+  //     catch(err){
+  //         if(err.response){
+  //             if(err.response.status == 401){
+  //                 navigate("/inValidUser");
+  //             }
+  //         }
 
-//         // navigate("/dashboard");
-
-//     }
-//     catch(err){
-//         if(err.response){
-//             if(err.response.status == 401){
-//                 navigate("/inValidUser");
-//             }
-//         }
-
-//     }
-// }
+  //     }
+  // }
   // isDashBoardValid();
-  useEffect(() =>{
-      isDashBoardValid();
-  },[])
+  useEffect(() => {
+    isDashBoardValid();
+  }, []);
 
-
-  console.log("The data from context is " , data)
+  console.log("The data from context is ", data);
 
   const [file, setFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
@@ -112,14 +110,12 @@ const Predict = () => {
 
   const handleSubmit = async () => {
     if (!file) {
-      toast.error("Please select a file first")
+      toast.error("Please select a file first");
       return;
     }
 
-
     const formData = new FormData();
     formData.append("file", file);
-
 
     try {
       setLoading(true);
@@ -137,17 +133,15 @@ const Predict = () => {
       setLoading(false);
     } catch (error) {
       console.error("Error:", error);
-      setLoading(false)
+      setLoading(false);
     }
   };
 
   const sendData = async () => {
     try {
-
-
-    if (!file) {
-      toast.error("Please select a file first")
-    }
+      if (!file) {
+        toast.error("Please select a file first");
+      }
 
       let token = localStorage.getItem("userDataToken");
       const fileDataPromise = new Promise((resolve, reject) => {
@@ -168,12 +162,12 @@ const Predict = () => {
       const formData = new FormData();
       formData.append("file", file, fileName);
       formData.append("prediction", prediction);
-      if(token){
-        formData.append("token",token);
+      if (token) {
+        formData.append("token", token);
       }
 
       const response = await axios.post(
-        "http://localhost:3000/api/v1/imageUpload",
+        "https://cotton-hub.vercel.app/api/v1/imageUpload",
         formData
       );
       console.log(response.data);
@@ -191,16 +185,14 @@ const Predict = () => {
     const droppedFile = event.dataTransfer.files[0];
     handleFileChange({ target: { files: [droppedFile] } });
   };
-  useEffect(() =>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
 
-  return (
-    login ? (
-
-      <div className="w-[100vw] h-full flex justify-center p-7 ">
+  return login ? (
+    <div className="w-[100vw] h-full flex justify-center p-7 ">
       <div className="mt-20 flex flex-col md:flex-row max-w-[1200px] mx-auto  gap-20 p-10 rounded-lg ">
-      <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2">
           <h1 className="text-4xl font-bold mb-4 text-left text-gray-900 font-mulish">
             Cotton Disease Detection Using Deep Learning
           </h1>
@@ -305,7 +297,8 @@ const Predict = () => {
               {prediction || !loading ? (
                 <div>
                   <p className="text-lg mt-4 text-gray-700 mb-2">
-                    Prediction: <span className="font-mulish">{prediction}</span>
+                    Prediction:{" "}
+                    <span className="font-mulish">{prediction}</span>
                   </p>
                 </div>
               ) : (
@@ -325,11 +318,8 @@ const Predict = () => {
         </div>
       </div>
     </div>
-    ) : (
-
-      <UserNotValid />
-    )
-
+  ) : (
+    <UserNotValid />
   );
 };
 
